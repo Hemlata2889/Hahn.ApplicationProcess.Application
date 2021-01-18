@@ -1,0 +1,77 @@
+﻿@*@model ApplicantModel*@
+@{
+    ViewData["Title"] = "Applicant Details";
+}
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="~/js/applicant.js"></script>
+</head>
+<div class="text-center">
+    <div class="form-group col-md-6">
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <label class="col-md-4" for="name" style="text-align: left;">Search by ID:</label> <div class="clearfix"></div>
+            <input type="text" class="form-control col-md-2" id="id">
+            <button type="submit" class="btn btn-primary col-md-4" id="btnget" onclick="getData()">Get</button>
+
+        </div>
+
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <label class="col-md-6" for="name" style="text-align: left;">Name:</label> <div class="clearfix"></div>
+            <input type="text" class="form-control col-md-10" id="name">
+        </div>
+
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <label class="col-md-6" for="fname" style="text-align: left;">Family Name:</label> <div class="clearfix"></div>
+            <input type="text" class="form-control col-md-10" id="fname">
+        </div>
+
+        <div class="row col-md-12" style="padding-top: 10px;">
+
+            <label class="col-md-6" for="address" style="text-align: left;">Address:</label> <div class="clearfix"></div>
+            <input type="text" class="form-control col-md-10" id="address">
+        </div>
+
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <label class="col-md-6" for="country" style="text-align: left;">Country of Origin:</label> <div class="clearfix"></div>
+            <input type="text" class="form-control col-md-10" id="country">
+        </div>
+
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <label class="col-md-6" for="email" style="text-align: left;">Email address:</label> <div class="clearfix"></div>
+            <input type="email" class="form-control col-md-10" id="email">
+        </div>
+
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <label class="col-md-6" for="age" style="text-align: left;">Age:</label> <div class="clearfix"></div>
+            <input type="text" class="form-control col-md-10" id="age">
+        </div>
+
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <label class="col-md-6" for="hired" style="text-align: left;">Hired:</label>
+            <div class="clearfix"></div>
+            <select id="hired" class="form-control col-md-10">
+                <option value="true">True</option>
+                <option value="false" selected>False</option>
+            </select>
+        </div>
+        <div class="row col-md-12" style="padding-top: 10px;">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary" id="btnsubmit" onclick="submitData()">Submit</button>
+               
+                <button type="submit" class="btn btn-primary" id="btnupdate" onclick="updateData()">Update</button>
+                <button type="submit" class="btn btn-primary" id="btndelete" onclick="deleteData()">Delete</button>
+                <button type="submit" class="btn btn-primary" id="btnreset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
