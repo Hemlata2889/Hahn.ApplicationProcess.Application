@@ -46,7 +46,8 @@ namespace Hahn.ApplicationProcess.December2020.Web
                 app.UseDeveloperExceptionPage();
             }
             else
-            {
+            { 
+               
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
@@ -66,7 +67,7 @@ namespace Hahn.ApplicationProcess.December2020.Web
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseStaticFiles();;
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

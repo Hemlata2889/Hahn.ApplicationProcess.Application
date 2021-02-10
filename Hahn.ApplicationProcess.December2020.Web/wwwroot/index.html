@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Applicant Details</title>
+    <script src="app/applicant.js"></script>
+</head>
+<body>
+    <div id="applicant">
+    </div>
+    <script>
+        var appObj = new Applicant("Puneet");
+        document.getElementById("applicant").innerHTML = "<h1>" + appObj.applicantName + "</h1>";
+    </script>
+</body>
+</html>

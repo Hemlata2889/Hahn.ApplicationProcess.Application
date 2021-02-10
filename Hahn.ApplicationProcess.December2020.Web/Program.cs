@@ -25,7 +25,7 @@ namespace Hahn.ApplicationProcess.December2020.Web
                 {
                     webBuilder.UseStartup<Startup>();
                 })
-            //.UseSerilog();
+                       //.UseSerilog();
             .UseSerilog((hostingContext, loggerConfig) =>
              loggerConfig.ReadFrom.Configuration(hostingContext.Configuration));
     }

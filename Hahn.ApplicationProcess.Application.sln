@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn.ApplicationProcess.Dec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn.ApplicationProcess.December2020.Web", "Hahn.ApplicationProcess.December2020.Web\Hahn.ApplicationProcess.December2020.Web.csproj", "{10DEBE65-11C2-40F6-8132-372D0EE0E309}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "project", "aurelia-app\project.csproj", "{46880ADF-D781-4171-8E47-66B7D0FA03B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{10DEBE65-11C2-40F6-8132-372D0EE0E309}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10DEBE65-11C2-40F6-8132-372D0EE0E309}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10DEBE65-11C2-40F6-8132-372D0EE0E309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46880ADF-D781-4171-8E47-66B7D0FA03B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46880ADF-D781-4171-8E47-66B7D0FA03B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46880ADF-D781-4171-8E47-66B7D0FA03B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46880ADF-D781-4171-8E47-66B7D0FA03B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
